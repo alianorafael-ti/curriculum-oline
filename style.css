@@ -1,0 +1,219 @@
+/*
+ * Arquivo CSS estilizado para o Currículo de Aliano Rafael da Silva
+ * Paleta de Cores:
+ * - Primária (Fundo Principal): #F8F9FA (Branco Suave)
+ * - Secundária (Destaque): #007BFF (Azul Profissional)
+ * - Texto Principal: #343A40 (Cinza Escuro)
+ * - Cabeçalho: #E9ECEF (Cinza Claro)
+ */
+
+/* ---------------------------------- */
+/* Estilos Gerais e Reset */
+/* ---------------------------------- */
+
+body {
+    /* Cor de fundo primária para o corpo, substituindo o verde/azul original */
+    background-color: #F8F9FA;
+    /* Cor do texto principal */
+    color: #343A40;
+    /* Fonte mais limpa e moderna */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Melhor legibilidade */
+}
+
+/* Garante que os links e botões tenham o mesmo cursor padrão */
+a, button {
+    cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* Estilos do Cabeçalho (Header) */
+/* ---------------------------------- */
+
+header {
+    /* Cor de fundo para um contraste suave */
+    background-color: #E9ECEF;
+    /* Cor do texto do cabeçalho */
+    color: #343A40;
+    text-align: center;
+    padding: 3rem 1rem; /* Aumenta o espaçamento */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+    border-bottom: 5px solid #007BFF; /* Linha de destaque azul */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    color: #007BFF; /* Título principal em azul */
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 300; /* Texto mais leve */
+    color: #6C757D; /* Subtítulo em cinza */
+}
+
+/* ---------------------------------- */
+/* Estilos do Conteúdo Principal (Main) */
+/* ---------------------------------- */
+
+main {
+    max-width: 900px;
+    /* Centraliza o conteúdo principal */
+    margin: 3rem auto;
+    /* Fundo branco limpo para o currículo */
+    background: #FFFFFF;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    /* Sombra mais pronunciada e profissional */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------------------------------- */
+/* Estilos de Seção */
+/* ---------------------------------- */
+
+section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    /* Separador sutil entre as seções */
+    border-bottom: 1px dashed #DEE2E6;
+}
+
+/* Remove a borda da última seção */
+main section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    /* Cor dos títulos de seção */
+    color: #007BFF;
+    font-size: 1.8rem;
+    font-weight: 700;
+    /* Remove a borda inferior para um visual mais limpo */
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    /* Ícone simples antes do título (pode ser ajustado) */
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Pseudo-elemento para o "ícone" de marcador */
+h2::before {
+    content: '▶';
+    color: #007BFF;
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* ---------------------------------- */
+/* Estilos de Listas e Texto */
+/* ---------------------------------- */
+
+ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Marcador personalizado para listas */
+li::before {
+    content: '•';
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #343A40;
+}
+
+/* Estilo para a descrição "Sobre mim" */
+#sobre p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* ---------------------------------- */
+/* Estilos de Links (Contato e Projetos) */
+/* ---------------------------------- */
+
+a {
+    color: #007BFF; /* Links na cor de destaque */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Cor mais escura ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos para os parágrafos de contato */
+#contato p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* ---------------------------------- */
+/* Estilos do Rodapé (Footer) */
+/* ---------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #343A40; /* Cor de fundo escura */
+    color: #FFFFFF; /* Texto branco */
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* ---------------------------------- */
+/* Responsividade (Para Telas Menores) */
+/* ---------------------------------- */
+
+@media (max-width: 768px) {
+    main {
+        margin: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #sobre p {
+        font-size: 1rem;
+    }
+}
